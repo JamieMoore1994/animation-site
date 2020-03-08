@@ -1,0 +1,331 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  min-width: 320px;
+  line-height: 1.35;
+  overflow-x: hidden; }
+
+.ff--turnip {
+  font-family: turnip, serif; }
+
+.ff--kandin {
+  font-family: kandin, sans-serif; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.container--large {
+  max-width: 1440px;
+  margin: 0 auto; }
+
+.animation {
+  height: 100vh;
+  width: 100vw;
+  position: relative; }
+
+.site-header {
+  background-color: #1d2951;
+  padding: 2rem;
+  display: none; }
+  .site-header__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    @media screen and (min-width: 26.25em) {
+      .site-header__items {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; } }
+  .site-header__logo img {
+    height: 10rem;
+    width: 10rem; }
+  .site-header__nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none; }
+    .site-header__nav ul li {
+      padding: 1rem 2rem; }
+      .site-header__nav ul li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #f2f2f2;
+        font-size: 1.2rem; }
+
+/*---------------------------
+    Opening text sequence
+---------------------------*/
+.animation__intro--text {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  height: 30rem;
+  width: 30rem;
+  opacity: 0; }
+  @media screen and (min-width: 21em) {
+    .animation__intro--text {
+      height: 34rem;
+      width: 34rem; } }
+  @media screen and (min-width: 25em) {
+    .animation__intro--text {
+      height: 37rem;
+      width: 37rem; } }
+  @media screen and (min-width: 46.87em) {
+    .animation__intro--text {
+      height: 60rem;
+      width: 60rem; } }
+  @media screen and (min-width: 63.12em) {
+    .animation__intro--text {
+      height: 75rem;
+      width: 75rem; } }
+
+@-webkit-keyframes openingText {
+  from {
+    opacity: 0;
+    stroke-dashoffset: 500; }
+  to {
+    opacity: 1;
+    stroke-dashoffset: 0; } }
+
+@keyframes openingText {
+  from {
+    opacity: 0;
+    stroke-dashoffset: 500; }
+  to {
+    opacity: 1;
+    stroke-dashoffset: 0; } }
+
+/*---------------------------
+    Broken car sequence
+---------------------------*/
+.animation__broken--car {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-25%);
+  -ms-transform: translateX(-50%) translateY(-25%);
+  transform: translateX(-50%) translateY(-25%);
+  height: 60rem;
+  width: 60rem;
+  opacity: 0; }
+
+.animation__back-wheel {
+  position: absolute;
+  left: 24.7%;
+  top: 34%;
+  height: 9rem;
+  width: 9rem; }
+
+.animation__front-wheel {
+  position: absolute;
+  left: 66%;
+  top: 34%;
+  height: 9rem;
+  width: 9rem; }
+
+.animation__exhaust-smoke {
+  opacity: 0; }
+
+.animation__engine-smoke {
+  opacity: 0; }
+
+@-webkit-keyframes brokenCar {
+  from {
+    opacity: 0.8; }
+  to {
+    opacity: 1; } }
+
+@keyframes brokenCar {
+  from {
+    opacity: 0.8; }
+  to {
+    opacity: 1; } }
+
+@-webkit-keyframes rotateBrokeTires {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes rotateBrokeTires {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@-webkit-keyframes exhaustSmokeBroken {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(1.5rem);
+    transform: translateX(1.5rem); }
+  to {
+    opacity: 1.4;
+    -webkit-transform: translateX(-0.5rem);
+    transform: translateX(-0.5rem); } }
+
+@keyframes exhaustSmokeBroken {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(1.5rem);
+    transform: translateX(1.5rem); }
+  to {
+    opacity: 1.4;
+    -webkit-transform: translateX(-0.5rem);
+    transform: translateX(-0.5rem); } }
+
+@-webkit-keyframes shake {
+  10%, 90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+    transform: translate3d(-1px, 0, 0); }
+  20%, 80% {
+    -webkit-transform: translate3d(2px, 0, 0);
+    transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% {
+    -webkit-transform: translate3d(-4px, 0, 0);
+    transform: translate3d(-4px, 0, 0); }
+  40%, 60% {
+    -webkit-transform: translate3d(4px, 0, 0);
+    transform: translate3d(4px, 0, 0); } }
+
+@keyframes shake {
+  10%, 90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+    transform: translate3d(-1px, 0, 0); }
+  20%, 80% {
+    -webkit-transform: translate3d(2px, 0, 0);
+    transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% {
+    -webkit-transform: translate3d(-4px, 0, 0);
+    transform: translate3d(-4px, 0, 0); }
+  40%, 60% {
+    -webkit-transform: translate3d(4px, 0, 0);
+    transform: translate3d(4px, 0, 0); } }
+
+@-webkit-keyframes engineSmoke {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 0.2; }
+  50% {
+    opacity: 0.4; }
+  75% {
+    opacity: 0.8; }
+  90% {
+    opacity: 0.6; }
+  100% {
+    opacity: 0.4; } }
+
+@keyframes engineSmoke {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 0.2; }
+  50% {
+    opacity: 0.4; }
+  75% {
+    opacity: 0.8; }
+  90% {
+    opacity: 0.6; }
+  100% {
+    opacity: 0.4; } }
+
+/*---------------------------
+    New car text sequence
+---------------------------*/
+.animation__new--text {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  height: 30rem;
+  width: 30rem;
+  opacity: 0; }
+  @media screen and (min-width: 21em) {
+    .animation__new--text {
+      height: 34rem;
+      width: 34rem; } }
+  @media screen and (min-width: 25em) {
+    .animation__new--text {
+      height: 37rem;
+      width: 37rem; } }
+  @media screen and (min-width: 46.87em) {
+    .animation__new--text {
+      height: 60rem;
+      width: 60rem; } }
+  @media screen and (min-width: 63.12em) {
+    .animation__new--text {
+      height: 75rem;
+      width: 75rem; } }
+
+@-webkit-keyframes newText {
+  from {
+    opacity: 0.4;
+    stroke-dashoffset: 300; }
+  to {
+    opacity: 1;
+    stroke-dashoffset: 0; } }
+
+@keyframes newText {
+  from {
+    opacity: 0.4;
+    stroke-dashoffset: 300; }
+  to {
+    opacity: 1;
+    stroke-dashoffset: 0; } }
+
+/*---------------------------
+    Ending car sequence
+---------------------------*/
+.animation__new--car {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%); }
+
+.animation__nice--car {
+  height: 60rem;
+  width: 60rem; }
+
+.animation__nice--back-tire {
+  position: absolute;
+  left: 29.7%;
+  top: 58%;
+  height: 8rem;
+  width: 8rem; }

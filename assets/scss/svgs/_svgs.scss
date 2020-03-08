@@ -3,19 +3,42 @@
 ---------------------------*/
 .animation {
     &__intro--text {
-        stroke-dasharray: 400;
-        stroke-dashoffset: 400;
-        animation: openingText 2s linear;
-        height: 60rem;
-        width: 60rem;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        stroke-dasharray: 500;
+        stroke-dashoffset: 500;
+        // animation: openingText 3s linear;
+        height: 30rem;
+        width: 30rem;
         opacity: 0;
+
+        @media screen and (min-width: 21em) {
+            height: 34rem;
+            width: 34rem;
+        }
+
+        @media screen and (min-width: 25em) {
+            height: 37rem;
+            width: 37rem;
+        }
+
+        @media screen and (min-width: 46.87em) {
+            height: 60rem;
+            width: 60rem;
+        }
+
+        @media screen and (min-width: 63.12em) {
+            height: 75rem;
+            width: 75rem;
+        }
     }
 }
 
 @keyframes openingText {
     from {
         opacity: 0;
-        stroke-dashoffset: 400;
+        stroke-dashoffset: 500;
     }
 
     to {
@@ -32,18 +55,18 @@
     // Styling for the outline of the car
     &__broken--car {
         position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-25%);
         height: 60rem;
         width: 60rem;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-25%);
         opacity: 0;
-        animation: brokenCar 6s linear 2s;
+        // animation: brokenCar 6s linear 3s;
     }
 
     // Shaking the car
     &__broke-car {
-        animation: shake 1s linear 6s
+        // animation: shake 1s linear 5s
     }
 
     // Back tire
@@ -53,7 +76,7 @@
         top: 34%;
         height: 9rem;
         width: 9rem;
-        animation: rotateBrokeTires 1s linear 5s;
+        // animation: rotateBrokeTires 1s linear 4s;
     }
 
     // front tire
@@ -63,27 +86,27 @@
         top: 34%;
         height: 9rem;
         width: 9rem;
-        animation: rotateBrokeTires 1s linear 5s;
+        // animation: rotateBrokeTires 1s linear 4s;
     }
 
 
     // Exhaust smoke
     &__exhaust-smoke {
         opacity: 0;
-        animation: exhaustSmokeBroken 1s 3 linear 4s;
+        // animation: exhaustSmokeBroken 1s 4 linear 4s;
     }
 
     // Engine smoke
     &__engine-smoke {
         opacity: 0;
-        animation: engineSmoke 3s linear 6s;
+        // animation: engineSmoke 3s linear 6s;
     }
 }
 
 // Broken car animation
 @keyframes brokenCar {
     from {
-        opacity: 0;
+        opacity: 0.8;
     }
     to {
         opacity: 1;
@@ -107,8 +130,8 @@
         transform: translateX(1.5rem);
     }
     to {
-        opacity: 1;
-        transform: translateX(-1rem);
+        opacity: 1.4;
+        transform: translateX(-0.5rem);
     }
 }
 
@@ -146,11 +169,14 @@
     }
 
     75% {
-        opacity: 0.6;
+        opacity: 0.8;
     }
 
+    90% {
+        opacity: 0.6;
+    }
     100% {
-        opacity: 0.8;
+        opacity: 0.4;
     }
 }
 
@@ -158,6 +184,78 @@
     New car text sequence
 ---------------------------*/
 
+.animation {
+    &__new--text {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        stroke-dasharray: 300;
+        stroke-dashoffset: 300;
+        // animation: newText 4s linear 9s;
+        height: 30rem;
+        width: 30rem;
+        opacity: 0;
+
+        @media screen and (min-width: 21em) {
+            height: 34rem;
+            width: 34rem;
+        }
+
+        @media screen and (min-width: 25em) {
+            height: 37rem;
+            width: 37rem;
+        }
+
+        @media screen and (min-width: 46.87em) {
+            height: 60rem;
+            width: 60rem;
+        }
+
+        @media screen and (min-width: 63.12em) {
+            height: 75rem;
+            width: 75rem;
+        }
+    }
+}
+
+@keyframes newText {
+    from {
+        opacity: 0.4;
+        stroke-dashoffset: 300;
+    }
+
+    to {
+        opacity: 1;
+        stroke-dashoffset: 0;
+    }
+}
+
 /*---------------------------
     Ending car sequence
 ---------------------------*/
+.animation {
+
+    &__new--car {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    &__nice--car {
+        height: 60rem;
+        width: 60rem;
+    }
+
+    &__nice--back-tire {
+        position: absolute;
+        left: 29.7%;
+        top: 58%;
+        height: 8rem;
+        width: 8rem;
+    }
+
+    &__nice--front-tire {
+
+    }
+}
