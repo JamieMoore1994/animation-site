@@ -1,8 +1,16 @@
+// Global
 @import "global";
 @import "variables";
 @import "mixins"; 
 @import "typography";           
 @import "classes";
 
-@import "pages/index";    
+// pages
+@import "pages/index";
+
+// components
+@import "components/navigation";
+
+// svgs
+@import "svgs/svgs";
       

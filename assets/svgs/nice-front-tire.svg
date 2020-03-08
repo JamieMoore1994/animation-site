@@ -1,0 +1,45 @@
+<svg id="front-wheel" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 130">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #666;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #000;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-3 {
+        stroke-width: 5px;
+      }
+
+      .cls-2 {
+        fill: #999;
+        stroke-width: 3px;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #e6e6e6;
+      }
+    </style>
+  </defs>
+  <g id="back-outside-wheel">
+    <path class="cls-1" d="M127.5,65c0,.17,0,.33,0,.5a62.49,62.49,0,0,1-125,0c0-.17,0-.33,0-.5a62.5,62.5,0,0,1,125,0Z"/>
+  </g>
+  <g id="front-inside-wheel">
+    <path class="cls-2" d="M65,80.5A15.52,15.52,0,0,1,49.51,65.14v-.5a15.5,15.5,0,0,1,31,0v.51A15.52,15.52,0,0,1,65,80.5Z"/>
+    <line class="cls-3" x1="65.21" y1="4.83" x2="65.21" y2="47.83"/>
+    <line class="cls-3" x1="106.21" y1="21.83" x2="78.21" y2="54.83"/>
+    <line class="cls-3" x1="125.21" y1="64.83" x2="82.21" y2="65.16"/>
+    <line class="cls-3" x1="48.21" y1="65.5" x2="5.21" y2="65.5"/>
+    <line class="cls-3" x1="53.21" y1="76.83" x2="23.21" y2="107.83"/>
+    <line class="cls-3" x1="65.21" y1="81.83" x2="65.21" y2="124.83"/>
+    <line class="cls-3" x1="27.21" y1="18.83" x2="54.21" y2="51.83"/>
+    <line class="cls-3" x1="77.21" y1="76.83" x2="107.21" y2="107.83"/>
+  </g>
+</svg>

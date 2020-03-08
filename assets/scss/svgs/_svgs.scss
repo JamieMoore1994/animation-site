@@ -1,0 +1,163 @@
+/*---------------------------
+    Opening text sequence
+---------------------------*/
+.animation {
+    &__intro--text {
+        stroke-dasharray: 400;
+        stroke-dashoffset: 400;
+        animation: openingText 2s linear;
+        height: 60rem;
+        width: 60rem;
+        opacity: 0;
+    }
+}
+
+@keyframes openingText {
+    from {
+        opacity: 0;
+        stroke-dashoffset: 400;
+    }
+
+    to {
+        opacity: 1;
+        stroke-dashoffset: 0;
+    }
+}
+
+/*---------------------------
+    Broken car sequence
+---------------------------*/
+.animation {
+
+    // Styling for the outline of the car
+    &__broken--car {
+        position: absolute;
+        height: 60rem;
+        width: 60rem;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-25%);
+        opacity: 0;
+        animation: brokenCar 6s linear 2s;
+    }
+
+    // Shaking the car
+    &__broke-car {
+        animation: shake 1s linear 6s
+    }
+
+    // Back tire
+    &__back-wheel {
+        position: absolute;
+        left: 24.7%;
+        top: 34%;
+        height: 9rem;
+        width: 9rem;
+        animation: rotateBrokeTires 1s linear 5s;
+    }
+
+    // front tire
+    &__front-wheel {
+        position: absolute;
+        left: 66%;
+        top: 34%;
+        height: 9rem;
+        width: 9rem;
+        animation: rotateBrokeTires 1s linear 5s;
+    }
+
+
+    // Exhaust smoke
+    &__exhaust-smoke {
+        opacity: 0;
+        animation: exhaustSmokeBroken 1s 3 linear 4s;
+    }
+
+    // Engine smoke
+    &__engine-smoke {
+        opacity: 0;
+        animation: engineSmoke 3s linear 6s;
+    }
+}
+
+// Broken car animation
+@keyframes brokenCar {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+// Rotating the tires animation
+@keyframes rotateBrokeTires {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+// Exhaust smoke animation
+@keyframes exhaustSmokeBroken {
+    from {
+        opacity: 0;
+        transform: translateX(1.5rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-1rem);
+    }
+}
+
+// Shake the car
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+}
+
+// Engine smoke animation
+@keyframes engineSmoke {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0.2;
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+
+    75% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 0.8;
+    }
+}
+
+/*---------------------------
+    New car text sequence
+---------------------------*/
+
+/*---------------------------
+    Ending car sequence
+---------------------------*/

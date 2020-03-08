@@ -1,0 +1,55 @@
+<svg id="new-car-text" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 667.25 120.4">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 50px;
+        fill: none;
+        stroke: #3fa9f5;
+        stroke-miterlimit: 10;
+        stroke-width: 5px;
+        font-family: MyriadPro-Regular, Myriad Pro;
+      }
+
+      .cls-1, .cls-11 {
+        letter-spacing: 0.24em;
+      }
+
+      .cls-2 {
+        letter-spacing: 0.24em;
+      }
+
+      .cls-3 {
+        letter-spacing: 0.24em;
+      }
+
+      .cls-4 {
+        letter-spacing: 0.23em;
+      }
+
+      .cls-5 {
+        letter-spacing: 0.24em;
+      }
+
+      .cls-6 {
+        letter-spacing: 0.24em;
+      }
+
+      .cls-7 {
+        letter-spacing: 0.24em;
+      }
+
+      .cls-8 {
+        letter-spacing: 0.24em;
+      }
+
+      .cls-9 {
+        letter-spacing: 0.23em;
+      }
+
+      .cls-10 {
+        letter-spacing: 0.24em;
+      }
+    </style>
+  </defs>
+  <text class="cls-1" transform="translate(4.55 44.35)">Speed <tspan class="cls-2" x="214.9" y="0">a</tspan><tspan class="cls-3" x="250.75" y="0">w</tspan><tspan class="cls-4" x="299.5" y="0">a</tspan><tspan class="cls-5" x="335.35" y="0">y </tspan><tspan class="cls-6" x="393.8" y="0">t</tspan><tspan class="cls-7" x="422.2" y="0">od</tspan><tspan class="cls-8" x="502.15" y="0">a</tspan><tspan class="cls-7" x="538" y="0">y in</tspan><tspan class="cls-9"><tspan x="0" y="60">y</tspan><tspan class="cls-5" x="35.2" y="60">our b</tspan><tspan class="cls-10" x="206.35" y="60">r</tspan><tspan class="cls-11" x="234.6" y="60">and new car!</tspan></tspan></text>
+</svg>

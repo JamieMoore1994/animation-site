@@ -1,0 +1,46 @@
+.site-header {
+    background-color: $blue-main;
+    padding: 2rem;
+    display: none;
+
+    &__items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        @media screen and (min-width: 26.25em) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    &__logo {
+
+        img {
+            height: 10rem;
+            width: 10rem;
+        }
+    }
+    
+
+    &__nav {
+        ul {
+            display: flex;
+            list-style-type: none;
+        
+        li {
+            padding: 1rem 2rem;
+
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+                color: $grey-light;
+                font-size: 1.2rem;
+            }
+
+        }
+
+        }
+    }
+}
