@@ -459,7 +459,7 @@
             animation: lightBeams 2s 5 linear 17s;
         }
 
-        #car-light {
+        #new-car-light {
             fill: none;
             animation: carLightOn 9s ease-in 17s;
         }
@@ -691,12 +691,12 @@
     }
     75% {
         opacity: 1;
-        transform: scale(2.2) translateX(-1rem);
+        transform: scale(3) translateX(-1rem);
         z-index: -1;
     }
     85% {
         opacity: 1;
-        transform: scale(2.4) translateX(-1.5rem);
+        transform: scale(3.5) translateX(-1.5rem);
         z-index: -1;
     }
     100% {
