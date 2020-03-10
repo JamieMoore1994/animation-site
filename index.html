@@ -43,115 +43,138 @@
 
         <!--Broken car animation-->
         <div class="animation__broken--car">
-
-          <!--Car outline-->
-          <svg id="Layer_1" data-name="Layer 1" class = "animation__broke-car" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1018.32 428.35">
-            <defs>
-              <style>
-                .cls-1, .cls-4 {
-                  fill: #333;
-                }
           
-                .cls-2, .cls-5 {
-                  fill: none;
-                }
-          
-                .cls-2, .cls-3, .cls-4 {
-                  stroke: #000;
-                  stroke-miterlimit: 10;
-                  stroke-width: 5px;
-                }
-          
-                .cls-3 {
-                  fill: #c69c6d;
-                }
-          
-                .cls-6 {
-                  fill: #e6e6e6;
-                }
-              </style>
-            </defs>
-            <path id="car-engine-smoke" class="cls-1 animation__engine-smoke" d="M1254.66,332.06a11.73,11.73,0,0,0,.77-4.18c0-9-10.35-16.37-23.18-16.49a31.5,31.5,0,1,0-60.63-17.1,28.77,28.77,0,0,0-.68,2.92l-.55.12v-1.45a28.5,28.5,0,1,0-56.51,5.24,32.36,32.36,0,0,0-17-4.74c-16.85,0-30.5,12.54-30.5,28a25.43,25.43,0,0,0,.46,4.84,29,29,0,0,0,12.54,55.16,17.25,17.25,0,0,0,2.28-.1,16.5,16.5,0,0,0,29.62,1.64,22.72,22.72,0,0,0,10.45,2.46,17.83,17.83,0,0,0-.35,3.5c0,11.87,11.86,21.5,26.5,21.5a29.28,29.28,0,0,0,20-7.45c3.15,6.86,8.89,11.45,15.46,11.45,5,0,9.53-2.67,12.8-7a28.49,28.49,0,0,0,41.2-25.51v-.5h0a29,29,0,0,0,17.23-52.32Z" transform="translate(-248.01 -196.03)"/>
-            <g id="car-main">
-              <rect id="car-light" class="cls-2" x="917.92" y="250.85" width="28" height="86"/>
-              <path class="cls-3" d="M1193.93,446.88v-73H1053.39L994.81,210.53c0-6.62-3.89-12-8.63-12H612.68c-4.74,0-8.63,5.41-8.63,12L545.47,373.88H403.93v248h95a76,76,0,0,1,152,0h268a76,76,0,0,1,152,0h123v-89h-28v-86Zm-420-73H566.71L622.44,218.5H773.93Zm32,0V218.5H976.42l55.73,155.38Z" transform="translate(-248.01 -196.03)"/>
-              <rect class="cls-4" x="96.92" y="372.85" width="59" height="36"/>
-              <g>
-                <line class="cls-5" x1="390.42" y1="38.35" x2="377.42" y2="82.35"/>
-                <path d="M638.43,234.38c-.69,3.78-1.57,7.51-2.51,11.22s-2,7.39-3,11.06-2.26,7.34-3.5,10.94-2.51,7.23-4,10.78c.68-3.78,1.55-7.51,2.5-11.22s2-7.39,3-11.06,2.22-7.32,3.46-10.94S637,237.93,638.43,234.38Z" transform="translate(-248.01 -196.03)"/>
+          <div class="animation__broken--container">
+            <!--Broken car outline-->
+            <svg id="broken-car" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 854 428.35" class = "animation__broke--car">
+              <defs>
+                <style>
+                  .cls-1-brokencar, .cls-4-brokencar {
+                    fill: none;
+                  }
+            
+                  .cls-1-brokencar, .cls-2-brokencar, .cls-3-brokencar {
+                    stroke: #000;
+                    stroke-miterlimit: 10;
+                    stroke-width: 5px;
+                  }
+            
+                  .cls-2-brokencar {
+                    fill: #c69c6d;
+                  }
+            
+                  .cls-3-brokencar {
+                    fill: #333;
+                  }
+                </style>
+              </defs>
+              <g id="car-main">
+                <rect id="car-light" class="cls-1-brokencar" x="823.5" y="250.85" width="28" height="86"/>
+                <path class="cls-2-brokencar" d="M924.5,330.85v-73H784L725.38,94.5c0-6.62-3.89-12-8.63-12H343.25c-4.74,0-8.63,5.41-8.63,12L276,257.85H134.5v248h95a76,76,0,0,1,152,0h268a76,76,0,0,1,152,0h123v-89h-28v-86Zm-420-73H297.28L353,102.47H504.5Zm32,0V102.47H707l55.73,155.38Z" transform="translate(-73 -80)"/>
+                <rect class="cls-3-brokencar" x="2.5" y="372.85" width="59" height="36"/>
+                <g>
+                  <line class="cls-4-brokencar" x1="296" y1="38.35" x2="283" y2="82.35"/>
+                  <path d="M369,118.35c-.69,3.78-1.57,7.51-2.51,11.22s-2,7.39-3,11.06-2.26,7.34-3.5,10.94-2.51,7.23-4,10.78c.68-3.78,1.55-7.51,2.5-11.22s2-7.39,3-11.06,2.22-7.32,3.46-10.94S367.57,121.9,369,118.35Z" transform="translate(-73 -80)"/>
+                </g>
+                <path d="M697.11,113.83c1.14,3.68,2.08,7.39,3,11.11s1.66,7.47,2.41,11.22,1.4,7.52,2,11.3,1.11,7.57,1.43,11.41c-1.14-3.68-2.08-7.39-3-11.11s-1.66-7.47-2.41-11.22-1.4-7.52-2-11.3S697.43,117.66,697.11,113.83Z" transform="translate(-73 -80)"/>
               </g>
-              <path d="M966.54,229.86c1.14,3.68,2.08,7.39,3,11.11s1.66,7.47,2.41,11.22,1.4,7.52,2,11.3,1.11,7.57,1.43,11.41c-1.14-3.68-2.08-7.39-3-11.11s-1.66-7.47-2.41-11.22-1.4-7.52-2-11.3S966.86,233.69,966.54,229.86Z" transform="translate(-248.01 -196.03)"/>
-            </g>
-            <g id="smoke-three" class = "animation__exhaust-smoke">
-              <path class="cls-6" d="M337,569.54a6,6,0,0,0-5.67-6A7,7,0,0,0,320,561.63a12,12,0,0,0-9-4.09,11.58,11.58,0,0,0-2.87.36,7,7,0,0,0-9.82,9.7,7,7,0,0,0,6.63,12.28,11.94,11.94,0,0,0,14.62-1.94,7,7,0,0,0,12.16-2.45A6,6,0,0,0,337,569.54Z" transform="translate(-248.01 -196.03)"/>
-            </g>
-            <g id="smoke-one" class = "animation__exhaust-smoke">
-              <path class="cls-6" d="M332,594.54a6,6,0,0,0-5.67-6A7,7,0,0,0,315,586.63a12,12,0,0,0-9-4.09,11.58,11.58,0,0,0-2.87.36,7,7,0,0,0-9.82,9.7,7,7,0,0,0,6.63,12.28,11.94,11.94,0,0,0,14.62-1.94,7,7,0,0,0,12.16-2.45A6,6,0,0,0,332,594.54Z" transform="translate(-248.01 -196.03)"/>
-            </g>
-            <g id="smoke-one-2" class = "animation__exhaust-smoke">
-              <path class="cls-6" d="M290,574.54a6,6,0,0,0-5.67-6A7,7,0,0,0,273,566.63a12,12,0,0,0-9-4.09,11.58,11.58,0,0,0-2.87.36,7,7,0,0,0-9.82,9.7,7,7,0,0,0,6.63,12.28,11.94,11.94,0,0,0,14.62-1.94,7,7,0,0,0,12.16-2.45A6,6,0,0,0,290,574.54Z" transform="translate(-248.01 -196.03)"/>
-            </g>
-          </svg>
+            </svg>
 
-              <!--Back wheel broken car-->
-              <svg id="Layer_1" data-name="Layer 1" class = "animation__back-wheel" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150.51">
-                <defs>
-                  <style>
-                    .cls-1-backwheel {
-                      fill: none;
-                      stroke: #000;
-                      stroke-miterlimit: 10;
-                      stroke-width: 3px;
-                    }
-                  </style>
-                </defs>
-                <g id="car-tire">
-                  <g id="outside-tire">
-                    <path d="M75,3A72,72,0,1,1,3,75,72.08,72.08,0,0,1,75,3m0-3a75,75,0,1,0,75,75A75,75,0,0,0,75,0Z"/>
-                  </g>
-                  <g id="inside-tire">
-                    <path d="M75,59A16,16,0,1,1,59,75,16,16,0,0,1,75,59m0-3A19,19,0,1,0,94,75,19,19,0,0,0,75,56Z"/>
-                    <line class="cls-1-backwheel" x1="74.5" y1="56.5" x2="74.21" y2="2.58"/>
-                    <line class="cls-1-backwheel" x1="87.21" y1="64.08" x2="123.5" y2="21.5"/>
-                    <line class="cls-1-backwheel" x1="94.71" y1="75.08" x2="149.5" y2="75.5"/>
-                    <line class="cls-1-backwheel" x1="89.29" y1="85" x2="131.21" y2="123.08"/>
-                    <line class="cls-1-backwheel" x1="74.21" y1="92.58" x2="74.5" y2="150.5"/>
-                    <line class="cls-1-backwheel" x1="59.5" y1="85.5" x2="22.5" y2="128.5"/>
-                    <line class="cls-1-backwheel" x1="56.5" y1="75.5" x2="0.5" y2="75.5"/>
-                    <line class="cls-1-backwheel" x1="62.21" y1="65.08" x2="17.21" y2="30.08"/>
-                  </g>
+            <!--Broken car back wheel-->
+            <svg id="Layer_1" data-name="Layer 1" class = "animation__back-wheel" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150.51">
+              <defs>
+                <style>
+                  .cls-1-backwheel {
+                    fill: none;
+                    stroke: #000;
+                    stroke-miterlimit: 10;
+                    stroke-width: 3px;
+                  }
+                </style>
+              </defs>
+              <g id="car-tire">
+                <g id="outside-tire">
+                  <path d="M75,3A72,72,0,1,1,3,75,72.08,72.08,0,0,1,75,3m0-3a75,75,0,1,0,75,75A75,75,0,0,0,75,0Z"/>
                 </g>
-              </svg>
+                <g id="inside-tire">
+                  <path d="M75,59A16,16,0,1,1,59,75,16,16,0,0,1,75,59m0-3A19,19,0,1,0,94,75,19,19,0,0,0,75,56Z"/>
+                  <line class="cls-1-backwheel" x1="74.5" y1="56.5" x2="74.21" y2="2.58"/>
+                  <line class="cls-1-backwheel" x1="87.21" y1="64.08" x2="123.5" y2="21.5"/>
+                  <line class="cls-1-backwheel" x1="94.71" y1="75.08" x2="149.5" y2="75.5"/>
+                  <line class="cls-1-backwheel" x1="89.29" y1="85" x2="131.21" y2="123.08"/>
+                  <line class="cls-1-backwheel" x1="74.21" y1="92.58" x2="74.5" y2="150.5"/>
+                  <line class="cls-1-backwheel" x1="59.5" y1="85.5" x2="22.5" y2="128.5"/>
+                  <line class="cls-1-backwheel" x1="56.5" y1="75.5" x2="0.5" y2="75.5"/>
+                  <line class="cls-1-backwheel" x1="62.21" y1="65.08" x2="17.21" y2="30.08"/>
+                </g>
+              </g>
+            </svg>
+            
+            <!--Broken car front wheel-->
+            <svg id="Layer_1" data-name="Layer 1" class = "animation__front-wheel" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150.51">
+              <defs>
+                <style>
+                  .cls-1-frontwheel {
+                    fill: none;
+                    stroke: #000;
+                    stroke-miterlimit: 10;
+                    stroke-width: 3px;
+                  }
+                </style>
+              </defs>
+              <g id="car-tire">
+                <g id="outside-tire">
+                  <path d="M75,3A72,72,0,1,1,3,75,72.08,72.08,0,0,1,75,3m0-3a75,75,0,1,0,75,75A75,75,0,0,0,75,0Z"/>
+                </g>
+                <g id="inside-tire">
+                  <path d="M75,59A16,16,0,1,1,59,75,16,16,0,0,1,75,59m0-3A19,19,0,1,0,94,75,19,19,0,0,0,75,56Z"/>
+                  <line class="cls-1-frontwheel" x1="74.5" y1="56.5" x2="74.21" y2="2.58"/>
+                  <line class="cls-1-frontwheel" x1="87.21" y1="64.08" x2="123.5" y2="21.5"/>
+                  <line class="cls-1-frontwheel" x1="94.71" y1="75.08" x2="149.5" y2="75.5"/>
+                  <line class="cls-1-frontwheel" x1="89.29" y1="85" x2="131.21" y2="123.08"/>
+                  <line class="cls-1-frontwheel" x1="74.21" y1="92.58" x2="74.5" y2="150.5"/>
+                  <line class="cls-1-frontwheel" x1="59.5" y1="85.5" x2="22.5" y2="128.5"/>
+                  <line class="cls-1-frontwheel" x1="56.5" y1="75.5" x2="0.5" y2="75.5"/>
+                  <line class="cls-1-frontwheel" x1="62.21" y1="65.08" x2="17.21" y2="30.08"/>
+                </g>
+              </g>
+            </svg>
 
-              <!--Broken car front wheel-->
-              <svg id="Layer_1" data-name="Layer 1" class = "animation__front-wheel" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150.51">
-                <defs>
-                  <style>
-                    .cls-1-frontwheel {
-                      fill: none;
-                      stroke: #000;
-                      stroke-miterlimit: 10;
-                      stroke-width: 3px;
-                    }
-                  </style>
-                </defs>
-                <g id="car-tire">
-                  <g id="outside-tire">
-                    <path d="M75,3A72,72,0,1,1,3,75,72.08,72.08,0,0,1,75,3m0-3a75,75,0,1,0,75,75A75,75,0,0,0,75,0Z"/>
-                  </g>
-                  <g id="inside-tire">
-                    <path d="M75,59A16,16,0,1,1,59,75,16,16,0,0,1,75,59m0-3A19,19,0,1,0,94,75,19,19,0,0,0,75,56Z"/>
-                    <line class="cls-1-frontwheel" x1="74.5" y1="56.5" x2="74.21" y2="2.58"/>
-                    <line class="cls-1-frontwheel" x1="87.21" y1="64.08" x2="123.5" y2="21.5"/>
-                    <line class="cls-1-frontwheel" x1="94.71" y1="75.08" x2="149.5" y2="75.5"/>
-                    <line class="cls-1-frontwheel" x1="89.29" y1="85" x2="131.21" y2="123.08"/>
-                    <line class="cls-1-frontwheel" x1="74.21" y1="92.58" x2="74.5" y2="150.5"/>
-                    <line class="cls-1-frontwheel" x1="59.5" y1="85.5" x2="22.5" y2="128.5"/>
-                    <line class="cls-1-frontwheel" x1="56.5" y1="75.5" x2="0.5" y2="75.5"/>
-                    <line class="cls-1-frontwheel" x1="62.21" y1="65.08" x2="17.21" y2="30.08"/>
-                  </g>
-                </g>
-              </svg>
+            <!--Exhaust smoke-->
+            <svg id="broke-exhaust-smoke" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88.89 49.96" class = "animation__exhaust--broke">
+              <defs>
+                <style>
+                  .cls-1-broke-exhaust {
+                    fill: #e6e6e6;
+                  }
+                </style>
+              </defs>
+              <g id="smoke-three">
+                <path class="cls-1-broke-exhaust" d="M137.89,55a6,6,0,0,0-5.67-6,7,7,0,0,0-11.33-1.91,12,12,0,0,0-9-4.09,11.52,11.52,0,0,0-2.87.36A7,7,0,0,0,99.2,53a7,7,0,0,0,6.63,12.28,11.94,11.94,0,0,0,14.62-1.94,7,7,0,0,0,12.16-2.45A6,6,0,0,0,137.89,55Z" transform="translate(-49 -42)"/>
+              </g>
+              <g id="smoke-two">
+                <path class="cls-1-broke-exhaust" d="M132.89,80a6,6,0,0,0-5.67-6,7,7,0,0,0-11.33-1.91,12,12,0,0,0-9-4.09,11.52,11.52,0,0,0-2.87.36A7,7,0,0,0,94.2,78a7,7,0,0,0,6.63,12.28,11.94,11.94,0,0,0,14.62-1.94,7,7,0,0,0,12.16-2.45A6,6,0,0,0,132.89,80Z" transform="translate(-49 -42)"/>
+              </g>
+              <g id="smoke-one">
+                <path class="cls-1-broke-exhaust" d="M90.89,60a6,6,0,0,0-5.67-6,7,7,0,0,0-11.33-1.91,12,12,0,0,0-9-4.09,11.52,11.52,0,0,0-2.87.36A7,7,0,0,0,52.2,58,7,7,0,0,0,58.83,70.3a11.94,11.94,0,0,0,14.62-1.94,7,7,0,0,0,12.16-2.45A6,6,0,0,0,90.89,60Z" transform="translate(-49 -42)"/>
+              </g>
+            </svg>
+
+            <!--Engine smoke-->
+            <svg id="engine-smoke" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215.98 150.02" class = "animation__engine-smoke">
+              <defs>
+                <style>
+                  .cls-1-enginesmoke {
+                    fill: #333;
+                  }
+                </style>
+              </defs>
+              <path id="car-engine-smoke" class="cls-1-enginesmoke " d="M281.31,122.7a11.68,11.68,0,0,0,.77-4.18c0-9-10.35-16.37-23.18-16.49a31.5,31.5,0,0,0-60.42-17.84l-.21.74a29.41,29.41,0,0,0-.68,2.92L197,88V86.52a28.5,28.5,0,1,0-56.51,5.24,32.45,32.45,0,0,0-17-4.74C106.68,87,93,99.56,93,115a25.28,25.28,0,0,0,.46,4.84A29,29,0,0,0,106,175a15.82,15.82,0,0,0,2.28-.1,16.5,16.5,0,0,0,29.62,1.64A22.6,22.6,0,0,0,148.38,179a17.91,17.91,0,0,0-.35,3.5c0,11.87,11.86,21.5,26.5,21.5a29.28,29.28,0,0,0,20-7.45C197.68,203.43,203.42,208,210,208c5,0,9.53-2.67,12.8-7A28.49,28.49,0,0,0,264,175.51V175h0a29,29,0,0,0,17.23-52.32Z" transform="translate(-77 -58)"/>
+            </svg>
+            
+            
+          </div>
+
         </div>
 
         <!--New car text-->
@@ -164,6 +187,7 @@
         <!--New car sequence-->
         <div class="animation__new--car">
           
+        <div class="animation__container">
           <!--Nice car outline-->
           <svg id="whole-car" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 974.05 384" class = "animation__nice--car">
             <defs>
@@ -214,7 +238,7 @@
                 <path class="cls-1-nice-car" d="M1017.5,276.5V257.14a34.64,34.64,0,0,0-34.64-34.64H936.13l-44.8-122.11A33.38,33.38,0,0,0,860,78.5H543a33.38,33.38,0,0,0-31.35,21.89L466.87,222.5H393.42l-8.41-33H400.5a15,15,0,0,0,15-15h-116l28,15h38.94l8.41,33a13.35,13.35,0,0,0-13.35,13.35V375.76a34.75,34.75,0,0,0,34.74,34.74h37.27c0-.17,0-.33,0-.5a62.5,62.5,0,0,1,125,0c0,.17,0,.33,0,.5h230c0-.17,0-.33,0-.5a62.5,62.5,0,0,1,125,0c0,.17,0,.33,0,.5h63.77a40.25,40.25,0,0,0,40.24-40.24V346.5h-23v-70Zm-335-54H483.91l42.78-116.6A17.46,17.46,0,0,1,543,94.5H682.5Zm27,0V94.5H860a17.46,17.46,0,0,1,16.33,11.4l42.78,116.6Z"/>
               </clipPath>
             </defs>
-            <rect id="car-light" class="cls-2-nice-car" x="853.5" y="211.5" width="23" height="70"/>
+            <rect id="car-light" class="cls-2-nice-car .car-light" x="853.5" y="211.5" width="23" height="70"/>
             <rect id="exhaust" class="cls-3-nice-car" x="170.5" y="301.5" width="50" height="19"/>
             <g id="car-body">
               <g class="cls-4-nice-car">
@@ -227,14 +251,24 @@
             </g>
             <polygon class="cls-8-nice-car" points="393.15 88.3 394.59 86.59 403.85 48.7 402.41 50.41 393.15 88.3"/>
             <polygon class="cls-8-nice-car" points="722.59 48.71 722.14 50.9 732.22 88.58 732.67 86.39 722.59 48.71"/>
-            <path id="car-smoke" class="cls-8-nice-car animation__exhaust--smoke" d="M274.49,357.65a20,20,0,0,0-16,8.22c-.18,0-.36,0-.55,0A13.3,13.3,0,0,0,252.5,367a24.38,24.38,0,0,0-43.23-5.36,16.25,16.25,0,0,0-10.49-4,16.47,16.47,0,0,0-11.43,4.88c-1.53-10.61-7.47-18.53-14.59-18.53-8,0-14.6,10.12-14.95,22.81-9.17,2.58-15.81,10-15.81,18.82,0,10.32,9.14,18.79,20.8,19.7a25,25,0,0,0-5,15.1c0,13.57,10.6,24.57,23.66,24.57a23.1,23.1,0,0,0,16.41-6.89,19.36,19.36,0,0,0,7.25,1.43c9.12,0,16.83-6.33,19.5-15.09.6,0,1.19.08,1.8.08,15.24,0,27.6-10.7,27.6-23.89,0-.44-.05-.88-.08-1.32a13.16,13.16,0,0,0,4,.64,13.4,13.4,0,0,0,6.29-1.59,19.46,19.46,0,0,0,10.27,2.95c11.33,0,20.51-9.77,20.51-21.83S285.82,357.65,274.49,357.65Z" transform="translate(-142 -65)"/>
-            <g id="car-light-beams" class = "animation__light--beams">
+            <g id="car-light-beams" class = "light-beams">
               <line class="cls-9-nice-car" x1="895" y1="212" x2="944" y2="187"/>
               <line class="cls-9-nice-car" x1="902" y1="226" x2="954" y2="211"/>
               <line class="cls-9-nice-car" x1="903.95" y1="237.5" x2="974.05" y2="237.5"/>
               <line class="cls-9-nice-car" x1="910.47" y1="253.34" x2="963.86" y2="262.2"/>
               <line class="cls-9-nice-car" x1="911.77" y1="268.42" x2="962.56" y2="287.11"/>
             </g>
+          </svg>
+
+          <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153 101" class = "animation__exhaust-smoke-nice">
+            <defs>
+              <style>
+                .cls-1-exhaust-smoke {
+                  fill: #e6e6e6;
+                }
+              </style>
+            </defs>
+            <path id="car-smoke" class="cls-1-exhaust-smoke" d="M363.33,101.65a20,20,0,0,0-16,8.22c-.18,0-.36,0-.54,0a13.35,13.35,0,0,0-5.44,1.17,24.38,24.38,0,0,0-43.23-5.36,16.22,16.22,0,0,0-10.48-4,16.46,16.46,0,0,0-11.43,4.88C274.66,95.92,268.71,88,261.59,88c-8,0-14.59,10.12-14.95,22.81-9.17,2.58-15.81,10-15.81,18.82,0,10.32,9.15,18.79,20.8,19.7a25.08,25.08,0,0,0-5,15.1C246.61,178,257.2,189,270.27,189a23.14,23.14,0,0,0,16.41-6.89,19.28,19.28,0,0,0,7.25,1.43c9.11,0,16.82-6.33,19.49-15.09.6,0,1.19.08,1.8.08,15.25,0,27.6-10.7,27.6-23.89,0-.44,0-.88-.07-1.32a13.11,13.11,0,0,0,4,.64,13.43,13.43,0,0,0,6.29-1.59,19.41,19.41,0,0,0,10.27,2.95c11.32,0,20.5-9.77,20.5-21.83S374.65,101.65,363.33,101.65Z" transform="translate(-230.83 -88)"/>
           </svg>
           
 
@@ -273,7 +307,7 @@
               <path class="cls-1-wheel" d="M127.5,65c0,.17,0,.33,0,.5a62.49,62.49,0,0,1-125,0c0-.17,0-.33,0-.5a62.5,62.5,0,0,1,125,0Z"/>
             </g>
             <g id="front-inside-wheel">
-              <path class="cls-2-wheel " d="M65,80.5A15.52,15.52,0,0,1,49.51,65.14v-.5a15.5,15.5,0,0,1,31,0v.51A15.52,15.52,0,0,1,65,80.5Z"/>
+              <path class="cls-2-wheel" d="M65,80.5A15.52,15.52,0,0,1,49.51,65.14v-.5a15.5,15.5,0,0,1,31,0v.51A15.52,15.52,0,0,1,65,80.5Z"/>
               <line class="cls-3-wheel" x1="65.21" y1="4.83" x2="65.21" y2="47.83"/>
               <line class="cls-3-wheel" x1="106.21" y1="21.83" x2="78.21" y2="54.83"/>
               <line class="cls-3-wheel" x1="125.21" y1="64.83" x2="82.21" y2="65.16"/>
@@ -284,6 +318,54 @@
               <line class="cls-3-wheel" x1="77.21" y1="76.83" x2="107.21" y2="107.83"/>
             </g>
           </svg>
+
+          <!--Nice car front tire-->
+          <svg id="front-wheel" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 130"class = "animation__nice--front-tire">
+            <defs>
+              <style>
+                .cls-1-wheel-broke {
+                  fill: #666;
+                }
+          
+                .cls-1-wheel-broke, .cls-2-wheel-broke {
+                  stroke: #000;
+                }
+          
+                .cls-1-wheel-broke, .cls-2-wheel-broke, .cls-3-wheel-broke {
+                  stroke-miterlimit: 10;
+                }
+          
+                .cls-1-wheel-broke, .cls-3-wheel-broke {
+                  stroke-width: 5px;
+                }
+          
+                .cls-2-wheel-broke {
+                  fill: #999;
+                  stroke-width: 3px;
+                }
+          
+                .cls-3-wheel-broke {
+                  fill: none;
+                  stroke: #e6e6e6;
+                }
+              </style>
+            </defs>
+            <g id="back-outside-wheel">
+              <path class="cls-1-wheel-broke" d="M127.5,65c0,.17,0,.33,0,.5a62.49,62.49,0,0,1-125,0c0-.17,0-.33,0-.5a62.5,62.5,0,0,1,125,0Z"/>
+            </g>
+            <g id="front-inside-wheel">
+              <path class="cls-2-wheel-broke" d="M65,80.5A15.52,15.52,0,0,1,49.51,65.14v-.5a15.5,15.5,0,0,1,31,0v.51A15.52,15.52,0,0,1,65,80.5Z"/>
+              <line class="cls-3-wheel-broke" x1="65.21" y1="4.83" x2="65.21" y2="47.83"/>
+              <line class="cls-3-wheel-broke" x1="106.21" y1="21.83" x2="78.21" y2="54.83"/>
+              <line class="cls-3-wheel-broke" x1="125.21" y1="64.83" x2="82.21" y2="65.16"/>
+              <line class="cls-3-wheel-broke" x1="48.21" y1="65.5" x2="5.21" y2="65.5"/>
+              <line class="cls-3-wheel-broke" x1="53.21" y1="76.83" x2="23.21" y2="107.83"/>
+              <line class="cls-3-wheel-broke" x1="65.21" y1="81.83" x2="65.21" y2="124.83"/>
+              <line class="cls-3-wheel-broke" x1="27.21" y1="18.83" x2="54.21" y2="51.83"/>
+              <line class="cls-3-wheel-broke" x1="77.21" y1="76.83" x2="107.21" y2="107.83"/>
+            </g>
+          </svg>
+        </div>
           
         </div>
     </section>

@@ -5,13 +5,14 @@
     &__intro--text {
         position: absolute;
         left: 50%;
-        transform: translateX(-50%);
+        top: 50%;
+        transform: translate(-50%, -50%);
         stroke-dasharray: 500;
         stroke-dashoffset: 500;
-        // animation: openingText 3s linear;
         height: 30rem;
         width: 30rem;
         opacity: 0;
+        animation: openingText 4s ease-in;
 
         @media screen and (min-width: 21em) {
             height: 34rem;
@@ -37,7 +38,7 @@
 
 @keyframes openingText {
     from {
-        opacity: 0;
+        opacity: 0.4;
         stroke-dashoffset: 500;
     }
 
@@ -51,65 +52,229 @@
     Broken car sequence
 ---------------------------*/
 .animation {
-
     // Styling for the outline of the car
     &__broken--car {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translateX(-50%) translateY(-25%);
-        height: 60rem;
-        width: 60rem;
+        transform: translateX(-50%) translateY(-50%);
+        transform-origin: 50% 50%;
         opacity: 0;
-        // animation: brokenCar 6s linear 3s;
+        animation: brokenCar 7s linear 4s;
+    }
+
+    &__broken--container {
+        animation: shake 1s 4 linear 6s;
     }
 
     // Shaking the car
-    &__broke-car {
-        // animation: shake 1s linear 5s
+    &__broke--car {
+        height: 30rem;
+        width: 30rem;
     }
 
     // Back tire
     &__back-wheel {
         position: absolute;
-        left: 24.7%;
-        top: 34%;
-        height: 9rem;
-        width: 9rem;
-        // animation: rotateBrokeTires 1s linear 4s;
+        top: 65%;
+        left: 18%;
+        height: 5.5rem;
+        width: 5.5rem;
+        animation: rotateBrokeTires 1s linear 5s;
     }
 
     // front tire
     &__front-wheel {
         position: absolute;
-        left: 66%;
-        top: 34%;
-        height: 9rem;
-        width: 9rem;
-        // animation: rotateBrokeTires 1s linear 4s;
+        top: 65%;
+        left: 67.2%;
+        height: 5.5rem;
+        width: 5.5rem;
+        animation: rotateBrokeTires 1s linear 5s;
     }
 
 
     // Exhaust smoke
-    &__exhaust-smoke {
+    &__exhaust--broke {
+        position: absolute;
+        height: 2rem;
+        width: 2rem;
+        left: -2%;
+        top: 67%;
+        z-index: -1;
         opacity: 0;
-        // animation: exhaustSmokeBroken 1s 4 linear 4s;
+        animation: exhaustSmokeBroken 1s 3 linear 5s;
     }
 
     // Engine smoke
     &__engine-smoke {
+        position: absolute;
+        height: 5rem;
+        width: 5rem;
+        top: 36%;
+        right: 0%;
+        z-index: -1;
         opacity: 0;
-        // animation: engineSmoke 3s linear 6s;
+        animation: engineSmoke 3s linear 8s;
+    }
+
+    /*--------------------------------------------*/
+    // Media queries for the svgs
+    @media screen and (min-width: 350px) {
+        &__exhaust--broke {
+            left: -5%;
+        }
+    }
+    /*--------------------------------------------*/
+    
+    @media screen and (min-width: 400px) {
+
+        &__broke--car {
+            height: 33rem;
+            width: 33rem;
+        }
+
+        &__exhaust--broke {
+            height: 2.8rem;
+            width: 2.8rem;
+            left: -8%;
+        }
+    
+        &__back-wheel {
+            height: 5.8rem;
+            width: 5.8rem;
+            left: 18.4%;
+        }
+    
+        &__front-wheel {
+            height: 5.8rem;
+            width: 5.8rem;
+            left: 67.6%;
+        }
+
+        &__engine-smoke {
+            height: 6rem;
+            width: 6rem;
+            top: 36%;
+            right: -1%;
+        }
+    }
+
+    
+    @media screen and (min-width: 600px) {
+        &__broke--car {
+            height: 45rem;
+            width: 45rem;
+        }
+
+        &__exhaust--broke {
+            height: 4rem;
+            width: 4rem;
+            left: -10%;
+            top: 66%;
+        }
+    
+        &__back-wheel {
+            height: 8rem;
+            width: 8rem;
+            left: 18.5%;
+        }
+    
+        &__front-wheel {
+            height: 8rem;
+            width: 8rem;
+            left: 67.5%;
+        }
+
+        &__engine-smoke {
+            height: 8rem;
+            width: 8rem;
+        }
+    }
+
+    @media screen and (min-width: 960px) {
+        &__broke--car {
+            height: 55rem;
+            width: 55rem;
+        }
+
+        &__exhaust--broke {
+            height: 6rem;
+            width: 6rem;
+            left: -12%;
+            top: 65%;
+        }
+    
+        &__back-wheel {
+            height: 9.5rem;
+            width: 9.5rem;
+            top: 65.5%;
+            left: 18.6%;
+        }
+    
+        &__front-wheel {
+            height: 9.5rem;
+            width: 9.5rem;
+            top: 65.5%;
+            left: 67.8%;
+        }
+
+        &__engine-smoke {
+            height: 10rem;
+            width: 10rem;
+            top: 35%;
+            right: -2%;
+        }
+    }
+
+    @media screen and (min-width: 1080px) {
+        &__broke--car {
+            height: 65rem;
+            width: 65rem;
+        }
+
+        &__exhaust--broke {
+            left: -10%;
+            top: 66%;
+        }
+    
+        &__back-wheel {
+            height: 11.5rem;
+            width: 11.5rem;
+            left: 18.3%;
+            top: 65.5%;
+        }
+    
+        &__front-wheel {
+            height: 11.5rem;
+            width: 11.5rem;
+            left: 67.5%;
+            top: 65.5%;
+        }
+
+        &__engine-smoke {
+            height: 12rem;
+            width: 12rem;
+            top: 34%;
+            right: -2%;
+        }
     }
 }
 
+/*-------Broken car animations---------*/
+
 // Broken car animation
 @keyframes brokenCar {
-    from {
+    0% {
         opacity: 0.8;
     }
-    to {
+
+    90% {
         opacity: 1;
+    }
+
+    100% {
+        opacity: 0.4;
     }
 }
 
@@ -126,12 +291,12 @@
 // Exhaust smoke animation
 @keyframes exhaustSmokeBroken {
     from {
-        opacity: 0;
-        transform: translateX(1.5rem);
+        opacity: 0.4;
+        transform: scale(0.8);
     }
     to {
         opacity: 1.4;
-        transform: translateX(-0.5rem);
+        transform: scale(1.2) translateX(-1rem);
     }
 }
 
@@ -157,26 +322,60 @@
 // Engine smoke animation
 @keyframes engineSmoke {
     0% {
-        opacity: 0;
-    }
-
-    25% {
-        opacity: 0.2;
+        opacity: 0.3;
+        transform: scale(0.8) translateY(1.5rem);
     }
 
     50% {
-        opacity: 0.4;
+        opacity: 0.8;
+        transform: scale(1.1) translateY(.5rem);
     }
 
     75% {
-        opacity: 0.8;
+        opacity: 1;
+        transform: scale(1.4) translateY(-1rem);
     }
 
     90% {
-        opacity: 0.6;
+        opacity: 0.7;
+        transform: scale(1.6) translateY(-1.4rem)
     }
+
     100% {
         opacity: 0.4;
+        transform: scale(1.8) translateY(-2rem);
+    }
+}
+
+// Media queries to ensure engine smoke looks right on all screens
+
+@media screen and (min-width: 400px) {
+    // Engine smoke animation
+    @keyframes engineSmoke {
+        0% {
+            opacity: 0.3;
+            transform: scale(0.8) translateY(2rem);
+        }
+
+        50% {
+            opacity: 0.8;
+            transform: scale(1.4) translate(.5rem, -.5rem);
+        }
+
+        75% {
+            opacity: 1;
+            transform: scale(1.8) translate(1rem, -1rem);
+        }
+
+        90% {
+            opacity: 0.7;
+            transform: scale(2) translate(1.4rem, -1.4rem)
+        }
+
+        100% {
+            opacity: 0.4;
+            transform: scale(2.5) translate(1.6rem, -2rem);
+        }
     }
 }
 
@@ -188,13 +387,14 @@
     &__new--text {
         position: absolute;
         left: 50%;
-        transform: translateX(-50%);
+        top: 50%;
+        transform: translate(-50%, -50%);
         stroke-dasharray: 300;
         stroke-dashoffset: 300;
-        // animation: newText 4s linear 9s;
         height: 30rem;
         width: 30rem;
         opacity: 0;
+        animation: newText 5s linear 11s;
 
         @media screen and (min-width: 21em) {
             height: 34rem;
@@ -220,7 +420,7 @@
 
 @keyframes newText {
     from {
-        opacity: 0.4;
+        opacity: 0.8;
         stroke-dashoffset: 300;
     }
 
@@ -240,22 +440,269 @@
         top: 50%;
         left: 50%;
         transform: translateX(-50%) translateY(-50%);
+        transform-origin: 50% 50%;
+        opacity: 0;
+        animation: niceCar 9s ease-in 16s;
+    }
+
+    &__container {
+        animation: moveCar 4.5s linear 21.2s;
     }
 
     &__nice--car {
-        height: 60rem;
-        width: 60rem;
+        height: 30rem;
+        width: 30rem;
+        animation: shakeNiceCar 1s ease-in 19s;
+
+        .light-beams {
+            opacity: 0;
+            animation: lightBeams 2s 5 linear 17s;
+        }
+
+        #car-light {
+            fill: none;
+            animation: carLightOn 9s ease-in 17s;
+        }
+    }
+
+    &__exhaust-smoke-nice {
+        position: absolute;
+        top: 59%;
+        left: 4%;
+        height: 3.5rem;
+        width: 3.5rem;
+        opacity: 0;
+        animation: exhaustSmoke 5s linear 20s;
     }
 
     &__nice--back-tire {
         position: absolute;
         left: 29.7%;
         top: 58%;
-        height: 8rem;
-        width: 8rem;
+        height: 4rem;
+        width: 4rem;
+        animation: niceTires 1s 6 linear 21s;
     }
 
     &__nice--front-tire {
+        position: absolute;
+        left: 66.1%;
+        top: 58%;
+        height: 4rem;
+        width: 4rem;
+        animation: niceTires 1s 6 linear 21s;
+    }
 
+    /*--------------------------------------------*/
+    // Media queries for the svgs
+    @media screen and (min-width: 400px) {
+
+        &__nice--car {
+            height: 33rem;
+            width: 33rem;
+        }
+
+        &__exhaust-smoke-nice {
+            height: 3.3rem;
+            width: 3.3rem;
+        }
+    
+        &__nice--back-tire {
+            height: 4.5rem;
+            width: 4.5rem;
+        }
+    
+        &__nice--front-tire {
+            height: 4.5rem;
+            width: 4.5rem;
+        }
+    }
+
+    // Media queries for the svgs
+    @media screen and (min-width: 600px) {
+        &__nice--car {
+            height: 45rem;
+            width: 45rem;
+        }
+
+        &__exhaust-smoke-nice {
+            height: 4.5rem;
+            width: 4.5rem;
+        }
+    
+        &__nice--back-tire {
+            height: 5.8rem;
+            width: 5.8rem;
+        }
+    
+        &__nice--front-tire {
+            height: 5.8rem;
+            width: 5.8rem;
+            left: 66.5%;
+        }
+    }
+
+    // Media queries for the svgs
+    @media screen and (min-width: 960px) {
+        &__nice--car {
+            height: 55rem;
+            width: 55rem;
+        }
+
+        &__exhaust-smoke-nice {
+            height: 4.5rem;
+            width: 4.5rem;
+        }
+    
+        &__nice--back-tire {
+            height: 7.2rem;
+            width: 7.2rem;
+            top: 58%;
+            left: 29.8%;
+        }
+    
+        &__nice--front-tire {
+            height: 7.2rem;
+            width: 7.2rem;
+            left: 66.4%;
+            top: 58%;
+        }
+    }
+
+    // Media queries for the svgs
+    @media screen and (min-width: 1080px) {
+        &__nice--car {
+            height: 65rem;
+            width: 65rem;
+        }
+
+        &__exhaust-smoke-nice {
+            height: 5.5rem;
+            width: 5.5rem;
+        }
+    
+        &__nice--back-tire {
+            height: 9rem;
+            width: 9rem;
+            left: 29%;
+            top: 58.8%;
+        }
+    
+        &__nice--front-tire {
+            height: 9rem;
+            width: 9rem;
+            left: 66.2%;
+            top: 58.8%;
+        }
+    }
+}
+/*-------Animations for nice car--------*/
+
+// animation to fade car in
+@keyframes niceCar {
+    from {
+        opacity: 0.9;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+// animation to switch on car light
+@keyframes carLightOn {
+    0% {
+        fill: none;
+    }
+    1% {
+        fill: orange
+    }
+    100% {
+        fill: orange;
+    }
+}
+
+@keyframes lightBeams {
+    from {
+        opacity: 0;
+        transform: translateY(-.2rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(.2rem);
+    }
+}
+
+// animation to shake car asif it has just started
+@keyframes shakeNiceCar {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+      }
+      
+      20%, 80% {
+        transform: translate3d(1px, 0, 0);
+      }
+    
+      30%, 50%, 70% {
+        transform: translate3d(-3px, 0, 0);
+      }
+    
+      40%, 60% {
+        transform: translate3d(2px, 0, 0);
+    }
+}
+
+// animation to rotate the tires
+@keyframes niceTires {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+// Animation to move the car off the screen
+@keyframes moveCar {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(170%);
+    }
+}
+
+// animation to blow smoke out the exhaust
+@keyframes exhaustSmoke {
+    0% {
+        opacity: 0;
+        transform: scale(1) translateX(3rem);
+        z-index: -1;
+    }
+    25% {
+        opacity: 1;
+        transform: scale(1.6) translateX(1rem);
+        z-index: -1;
+    }
+    50% {
+        opacity: 1;
+        transform: scale(2) translateX(-0.5rem);
+        z-index: -1;
+    }
+    75% {
+        opacity: 1;
+        transform: scale(2.2) translateX(-1rem);
+        z-index: -1;
+    }
+    85% {
+        opacity: 1;
+        transform: scale(2.4) translateX(-1.5rem);
+        z-index: -1;
+    }
+    100% {
+        opacity: 1;
+        transform: scale(150) translateX(-3rem);
+        z-index: 10;
+        
     }
 }
