@@ -30,16 +30,38 @@
         padding: 1.5rem 2rem;
         font-size: 1.3rem;
         text-decoration: none;
-        transition: all 200ms ease-in;
-
-        &:hover, &:focus {
-            background-color: $purple-light;
-        }
     }
 
     &__cars {
         padding: 1rem 0;
     }
+}
+
+.btn {
+    text-decoration: none;
+    background-color: $purple-dark;
+    color: $grey-light;
+    padding: 1rem;
+    font-size: 1.2rem;
+    transition: all 200ms ease-in;
+
+    &:hover, &:focus {
+        background-color: $purple-light;
+    }
+}
+
+.skip-content {
+    position: absolute;
+    bottom: 5%;
+    right: 2%;
+    z-index: 11;
+}
+
+.reload-animation {
+    position: absolute;
+    bottom: 5%;
+    left: 2%;
+    z-index: 11;
 }
 
 // Media queries
