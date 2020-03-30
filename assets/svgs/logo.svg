@@ -1,39 +1,42 @@
 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 255.26 76.17">
   <defs>
     <style>
-      .cls-1, .cls-4 {
+      .cls-1, .cls-5 {
         font-size: 40px;
         stroke-width: 5px;
         font-family: Kandin-Regular, Kandin;
         letter-spacing: 0.09em;
       }
 
-      .cls-1, .cls-2, .cls-3 {
+      .cls-1, .cls-3, .cls-4 {
         fill: none;
         stroke-miterlimit: 10;
       }
 
-      .cls-1, .cls-3 {
+      .cls-1, .cls-3, .cls-5 {
+        stroke: #f2f2f2;
+      }
+
+      .cls-2, .cls-4 {
         stroke: #8a7531;
       }
 
-      .cls-2, .cls-3 {
+      .cls-3, .cls-4 {
         font-size: 60px;
         stroke-width: 8px;
         font-family: Turnip-Regular, Turnip;
       }
 
-      .cls-2 {
-        stroke: #f2f2f2;
+      .cls-3 {
         letter-spacing: 0.29em;
       }
 
-      .cls-3 {
+      .cls-4 {
         letter-spacing: 0.09em;
       }
     </style>
   </defs>
-  <text class="cls-1" transform="translate(2.84 55.01)">Cars </text>
-  <text class="cls-2" transform="translate(115.66 48.87) rotate(14)">R</text>
-  <text class="cls-3" transform="translate(177.66 55.01)"> <tspan class="cls-4" x="19.14" y="0">Us</tspan></text>
+  <text class="cls-1" transform="translate(2.84 55.01)">Cars<tspan class="cls-2" x="95.88" y="0"> </tspan></text>
+  <text class="cls-3" transform="translate(115.66 48.87) rotate(14)">R</text>
+  <text class="cls-4" transform="translate(177.66 55.01)"> <tspan class="cls-5" x="19.14" y="0">Us</tspan></text>
   <text/></svg>

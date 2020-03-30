@@ -2,6 +2,7 @@
     Opening text sequence
 ---------------------------*/
 .animation {
+
     &__intro--text {
         position: absolute;
         left: 50%;
@@ -12,7 +13,7 @@
         height: 30rem;
         width: 30rem;
         opacity: 0;
-        animation: openingText 4s ease-in;
+        animation: openingText 2s ease-in;
 
         @media screen and (min-width: 21em) {
             height: 34rem;
@@ -60,17 +61,17 @@
         transform: translateX(-50%) translateY(-50%);
         transform-origin: 50% 50%;
         opacity: 0;
-        animation: brokenCar 7s linear 4s;
+        animation: brokenCar 5s linear 2s;
     }
 
     &__broken--container {
-        animation: shake 1s 4 linear 6s;
+        animation: shake 1s 2 linear 4s;
     }
 
     // Shaking the car
     &__broke--car {
-        height: 30rem;
-        width: 30rem;
+        height: 25rem;
+        width: 25rem;
     }
 
     // Back tire
@@ -78,9 +79,9 @@
         position: absolute;
         top: 65%;
         left: 18%;
-        height: 5.5rem;
-        width: 5.5rem;
-        animation: rotateBrokeTires 1s linear 5s;
+        height: 4.5rem;
+        width: 4.5rem;
+        animation: rotateBrokeTires 1s linear 3s;
     }
 
     // front tire
@@ -88,9 +89,9 @@
         position: absolute;
         top: 65%;
         left: 67.2%;
-        height: 5.5rem;
-        width: 5.5rem;
-        animation: rotateBrokeTires 1s linear 5s;
+        height: 4.5rem;
+        width: 4.5rem;
+        animation: rotateBrokeTires 1s linear 3s;
     }
 
 
@@ -99,11 +100,11 @@
         position: absolute;
         height: 2rem;
         width: 2rem;
-        left: -2%;
+        left: -5%;
         top: 67%;
         z-index: -1;
         opacity: 0;
-        animation: exhaustSmokeBroken 1s 3 linear 5s;
+        animation: exhaustSmokeBroken 1s 3 linear 3s;
     }
 
     // Engine smoke
@@ -115,7 +116,7 @@
         right: 0%;
         z-index: -1;
         opacity: 0;
-        animation: engineSmoke 3s linear 8s;
+        animation: engineSmoke 2s linear 5s;
     }
 
     /*--------------------------------------------*/
@@ -241,7 +242,7 @@
         &__back-wheel {
             height: 11.5rem;
             width: 11.5rem;
-            left: 18.3%;
+            left: 18.5%;
             top: 65.5%;
         }
     
@@ -300,7 +301,7 @@
     }
 }
 
-// Shake the car
+// Shake the car - This code was learnt from an article by Sarah Drasner on CSS Tricks https://css-tricks.com/snippets/css/shake-css-keyframe-animation/
 @keyframes shake {
     10%, 90% {
       transform: translate3d(-1px, 0, 0);
@@ -384,6 +385,7 @@
 ---------------------------*/
 
 .animation {
+    
     &__new--text {
         position: absolute;
         left: 50%;
@@ -394,7 +396,7 @@
         height: 30rem;
         width: 30rem;
         opacity: 0;
-        animation: newText 5s linear 11s;
+        animation: newText 2s linear 8s;
 
         @media screen and (min-width: 21em) {
             height: 34rem;
@@ -442,11 +444,11 @@
         transform: translateX(-50%) translateY(-50%);
         transform-origin: 50% 50%;
         opacity: 0;
-        animation: niceCar 9s ease-in 16s;
+        animation: niceCar 7s ease-in 10s;
     }
 
     &__container {
-        animation: moveCar 4.5s linear 21.2s;
+        animation: moveCar 6s linear 12s;
     }
 
     &__nice--car {
@@ -456,12 +458,12 @@
 
         .light-beams {
             opacity: 0;
-            animation: lightBeams 2s 5 linear 17s;
+            animation: lightBeams 2s 5 linear 11s;
         }
 
         #new-car-light {
             fill: none;
-            animation: carLightOn 9s ease-in 17s;
+            animation: carLightOn 9s ease-in 11s;
         }
     }
 
@@ -472,7 +474,7 @@
         height: 3.5rem;
         width: 3.5rem;
         opacity: 0;
-        animation: exhaustSmoke 5s linear 20s;
+        animation: exhaustSmoke 4s linear 13s;
     }
 
     &__nice--back-tire {
@@ -481,7 +483,7 @@
         top: 58%;
         height: 4rem;
         width: 4rem;
-        animation: niceTires 1s 6 linear 21s;
+        animation: niceTires 1s 6 linear 12s;
     }
 
     &__nice--front-tire {
@@ -490,7 +492,7 @@
         top: 58%;
         height: 4rem;
         width: 4rem;
-        animation: niceTires 1s 6 linear 21s;
+        animation: niceTires 1s 6 linear 12s;
     }
 
     /*--------------------------------------------*/
@@ -584,14 +586,14 @@
         &__nice--back-tire {
             height: 9rem;
             width: 9rem;
-            left: 29%;
+            left: 29.5%;
             top: 58.8%;
         }
     
         &__nice--front-tire {
             height: 9rem;
             width: 9rem;
-            left: 66.2%;
+            left: 66%;
             top: 58.8%;
         }
     }
@@ -633,7 +635,7 @@
     }
 }
 
-// animation to shake car asif it has just started
+// animation to shake car asif it has just started - This code was learnt from an article by Sarah Drasner on CSS Tricks https://css-tricks.com/snippets/css/shake-css-keyframe-animation/
 @keyframes shakeNiceCar {
     10%, 90% {
         transform: translate3d(-1px, 0, 0);

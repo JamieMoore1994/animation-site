@@ -10,24 +10,13 @@
 </head>
 <body>
     <header class="site-header">
-        <div class="site-header__items">
             <!--Logo-->
             <div class="site-header__logo">
                 <a href="#" title = "home page">
-                    <img src="assets/svgs/logo.svg" alt="Cars R Us logo">
+                    <img src="assets/svgs/logo.svg" alt="Cars R Us logo" class = "logo">
                 </a>
             </div>
 
-            <!--Nav-->
-            <nav class="site-header__nav">
-                <ul>
-                    <li><a href="#" class = "ff--kandin">Home</a></li>
-                    <li><a href="#" class = "ff--kandin">Find a car</a></li>
-                    <li><a href="#" class = "ff--kandin">Contact</a></li>
-                </ul>
-            </nav>
-
-        </div>
     </header>
 
     <!--Intro animation scene-->
@@ -370,7 +359,24 @@
         </div>
     </section>
 
+    <section class="cars-intro">
+
+      <div class="cars-intro__holder">
+        <h1 class="cars-intro__title ff--turnip">Drive home today in your brand new car</h1>
+        <a href="#" class="ff--kandin cars-intro__btn">Explore cars</a>
+      </div>
+
+      <div class="cars-intro__cars">
+        <img src="assets/images/home-car.png" alt="An image of a red Audi" class = "car car-one">
+        <img src="assets/images/car-home-second.png" alt="An image of a silver Mercedes" class = "car car-two">
+      </div>
+
+    </section>
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/EasePack.min.js"></script>
+
+    <script src = "assets/js/main.js"></script>
       
 </body>
 </html>

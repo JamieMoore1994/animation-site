@@ -1,46 +1,44 @@
 .site-header {
-    background-color: $blue-main;
-    padding: 2rem;
-    display: none;
+    background-color: $purple-main;
+    position: relative;
+    z-index: 2;
+    opacity: 0;
 
-    &__items {
+    &__logo {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
 
-        @media screen and (min-width: 26.25em) {
-            flex-direction: row;
-            justify-content: space-between;
-        }
-    }
-
-    &__logo {
-
-        img {
+        .logo {
+            fill: #f2f2f2;
             height: 10rem;
             width: 10rem;
         }
     }
+}
+
+// Media queries
+
+//500px
+@media screen and (min-width: $xxs) {
+
+    .site-header {
+        padding: 1rem 4rem;
+    }
+}
+
+//960px
+@media screen and (min-width: $large) {
     
+    .site-header {
 
-    &__nav {
-        ul {
-            display: flex;
-            list-style-type: none;
-        
-        li {
-            padding: 1rem 2rem;
+        &__logo {
 
-            a {
-                text-decoration: none;
-                text-transform: uppercase;
-                color: $grey-light;
-                font-size: 1.2rem;
+            .logo {
+                height: 12rem;
+                width: 12rem;
             }
-
-        }
-
         }
     }
+    
 }
