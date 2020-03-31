@@ -3,6 +3,10 @@
 ---------------------------*/
 .animation {
 
+    .hidden-title {
+        display: none;
+    }
+
     &__intro--text {
         position: absolute;
         left: 50%;

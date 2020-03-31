@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "description" content = "Cars R Us - home to many of the top brand cars and home to your brand new car. Explore today and drive home in your new car.">
     <link rel="stylesheet" href = "dest/main.css">
 
     <link rel="stylesheet" href="https://use.typekit.net/lam4zwd.css">
-    <title>Animation</title>
+    <title>Cars R Us | Home</title>
 </head>
 <body>
     <header class="site-header">
@@ -21,6 +22,8 @@
 
     <!--Intro animation scene-->
     <section class="animation">
+      <!--HTML validation erro. Did not want section in this title due to animated intro-->
+      <h4 class="hidden-title">Hidden Title</h4>
 
         <!--Intro text animation-->
         <div class="animation__intro">
@@ -363,7 +366,7 @@
 
       <div class="cars-intro__holder">
         <h1 class="cars-intro__title ff--turnip">Drive home today in your brand new car</h1>
-        <a href="#" class="ff--kandin cars-intro__btn btn">Explore cars</a>
+        <a href="#" class="ff--kandin cars-intro__btn btn" title = "Explore cars">Explore cars</a>
       </div>
 
       <div class="cars-intro__cars">
@@ -374,13 +377,13 @@
     </section>
 
     <!--Skip animation or reload animation buttons-->
-    <a href="#" class="skip-content btn ff--kandin">Skip Animation</a>
-    <a href="#" class="reload-animation btn ff--kandin">Reload animation</a>
+    <a href="#" class="skip-content btn ff--kandin" title = "Skip animation">Skip Animation</a>
+    <a href="#" class="reload-animation btn ff--kandin" title = "Reload animation">Reload animation</a>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/EasePack.min.js"></script>
 
-    <script src = "assets/js/main.js"></script>
+    <script src = "assets/js/main.js" async></script>
       
 </body>
 </html>
